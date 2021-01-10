@@ -1,0 +1,15 @@
+ifelse(is_mounted("/system"), unmount("/system"));
+ui_print(" ############### INFO ###############             ");
+ui_print(" Name     : TEAM WIN RECOVERY PROJECT");
+ui_print(" TWRP Ver : 3.5.0_10-0");
+ui_print(" Author   : @hraj9258");
+ui_print(" Device   : Poco X2/k30(phoenix,in)");
+ui_print(" Vendor   : POCO");
+ui_print(" ####################################             ");
+show_progress(0.100000, 0);
+ui_print("Flashing TWRP Recovery image...");
+package_extract_file("recovery.img", "/dev/block/bootdevice/by-name/recovery");
+show_progress(0.100000, 10);
+ui_print("TWRP Recovery image Flashing Completed...");
+set_progress(1.000000);
+
