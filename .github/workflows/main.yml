@@ -4,9 +4,9 @@ name: Test
 on:
 #  release:
 #    types: [published]
-#  push:
-#    branches:
-#      - master
+  push:
+    branches:
+      - main
 #    paths:
 #      - '.config'
 #  schedule:
