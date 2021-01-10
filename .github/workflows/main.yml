@@ -40,4 +40,4 @@ jobs:
          run: |
               cd work/telegram_bot
               sudo zip -r9 test.zip META-INF
-              curl -F chat_id=$CHAT_ID -F document=@test.zip -F parse_mode=markdown https://api.telegram.org/bot$BOT_TTOKKEN/sendDocument
+              curl -F chat_id=$CHAT_ID -F document=@test.zip -F parse_mode=markdown https://api.telegram.org/bot$BOT_TOKKEN/sendDocument
