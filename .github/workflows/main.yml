@@ -1,5 +1,5 @@
 
-name: Building recovery
+name: Test
 
 on:
 #  release:
@@ -18,8 +18,8 @@ on:
 
 env:
   CLONE_LINK: https://github.com/hraj9258/telegram_bot
-  CHAT_ID: -410038905
-  BOT_TOKKEN: 1325910951:AAE0OFvrta5-s9unIusYMx03iPo8b7raCEo
+  CHAT_ID: ${{ secrets.CHAT_ID }}
+  BOT_TOKKEN: ${{ secrets.BOT_TOKKEN }}
   TZ: Asia/Kolkata
 
 jobs:
